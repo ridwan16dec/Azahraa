@@ -204,28 +204,38 @@ async function startExperience() {
   endingScheduled = false;
   window.clearTimeout(endingTimer);
 
-  if (!Number.isFinite(song.duration) || song.duration === 0) {
-    await new Promise((resolve) => {
-      song.addEventListener("loadedmetadata", resolve, { once: true });
-      song.load();
-    });
+  song.loop = true;
+  song.muted = false;
+  song.volume = 1;
+  try {
+    song.currentTime = 0;
+  } catch {
+    // Some browsers only allow seeking after metadata is ready.
   }
 
   buildCues(song.duration || 180);
   setMessage(0);
-  song.currentTime = 0;
   textStartTime = performance.now();
-
-  try {
-    song.loop = true;
-    await song.play();
-  } catch {
-    messageText.textContent = "Klik sekali lagi untuk memulai lagunya.";
-    experience.addEventListener("click", () => song.play(), { once: true });
-  }
-
   cancelAnimationFrame(rafId);
   syncFrame();
+
+  const playAttempt = song.play();
+  try {
+    await playAttempt;
+  } catch {
+    const retryPlay = async () => {
+      try {
+        song.muted = false;
+        song.volume = 1;
+        await song.play();
+      } catch {
+        messageText.textContent = "Browser masih menahan lagunya. Klik sekali lagi ya.";
+      }
+    };
+
+    messageText.textContent = "Klik layar sekali lagi untuk memulai lagunya.";
+    experience.addEventListener("click", retryPlay, { once: true });
+  }
 }
 
 startButton.addEventListener("click", showConfirm);
