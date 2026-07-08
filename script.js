@@ -99,6 +99,10 @@ const paragraphs = rawMessage
   .map((text) => text.trim())
   .filter(Boolean);
 
+const READING_WORDS_PER_MINUTE = 95;
+const PARAGRAPH_PAUSE_SECONDS = 0.85;
+const MIN_PARAGRAPH_SECONDS = 3.2;
+
 const intro = document.querySelector("#intro");
 const confirmLayer = document.querySelector("#confirm");
 const experience = document.querySelector("#experience");
@@ -132,16 +136,26 @@ function formatTime(seconds) {
   return `${String(minutes).padStart(2, "0")}:${String(remainingSeconds).padStart(2, "0")}`;
 }
 
+function estimateParagraphDuration(text) {
+  const wordCount = text.split(/\s+/).filter(Boolean).length;
+  const punctuationCount = (text.match(/[,.?!]/g) || []).length;
+  const readingSeconds = (wordCount / READING_WORDS_PER_MINUTE) * 60;
+  const pauseSeconds = PARAGRAPH_PAUSE_SECONDS + punctuationCount * 0.12;
+
+  return Math.max(MIN_PARAGRAPH_SECONDS, readingSeconds + pauseSeconds);
+}
+
 function buildCues(duration) {
-  const readableDuration = Math.max((duration || 0) * 1.06, 1);
-  const totalWeight = paragraphs.reduce((sum, text) => sum + Math.max(38, text.length), 0);
+  const paragraphDurations = paragraphs.map(estimateParagraphDuration);
+  const estimatedReadingDuration = paragraphDurations.reduce((sum, seconds) => sum + seconds, 0);
+  const readableDuration = Math.max(estimatedReadingDuration, (duration || 0) * 1.06, 1);
+  const scale = readableDuration / estimatedReadingDuration;
   let cursor = 0;
 
   cues = paragraphs.map((text, index) => {
-    const weight = Math.max(38, text.length);
     const slice = index === paragraphs.length - 1
       ? readableDuration - cursor
-      : readableDuration * (weight / totalWeight);
+      : paragraphDurations[index] * scale;
     const cue = {
       text,
       start: cursor,
@@ -189,7 +203,7 @@ function setMessage(index) {
 }
 
 function syncFrame() {
-  const duration = song.duration || cues.at(-1)?.end || 0;
+  const textDuration = cues.at(-1)?.end || 0;
   const current = textStartTime ? (performance.now() - textStartTime) / 1000 : song.currentTime || 0;
   const activeIndex = cues.findIndex((cue, index) => {
     const nextCue = cues[index + 1];
@@ -198,11 +212,10 @@ function syncFrame() {
 
   setMessage(activeIndex < 0 ? 0 : activeIndex);
 
-  if (duration) {
-    const audioCurrent = song.currentTime || 0;
-    const progress = Math.min(100, (audioCurrent / duration) * 100);
+  if (textDuration) {
+    const progress = Math.min(100, (current / textDuration) * 100);
     progressFill.style.width = `${progress}%`;
-    timeText.textContent = `${formatTime(audioCurrent)} / ${formatTime(duration)}`;
+    timeText.textContent = `${formatTime(current)} / ${formatTime(textDuration)}`;
   }
 
   if (cues.at(-1) && current >= cues.at(-1).end) {
@@ -289,8 +302,6 @@ noButton.addEventListener("click", hideConfirm);
 yesButton.addEventListener("click", startExperience);
 
 song.addEventListener("ended", () => {
-  progressFill.style.width = "100%";
-  timeText.textContent = `${formatTime(song.duration)} / ${formatTime(song.duration)}`;
   if (!song.loop) {
     song.currentTime = 0;
     song.play();
@@ -299,7 +310,7 @@ song.addEventListener("ended", () => {
 
 song.addEventListener("loadedmetadata", () => {
   buildCues(song.duration);
-  timeText.textContent = `00:00 / ${formatTime(song.duration)}`;
+  timeText.textContent = `00:00 / ${formatTime(cues.at(-1)?.end || 0)}`;
 });
 
 allowButton.addEventListener("click", () => {
