@@ -419,7 +419,7 @@ button {
 }
 
 .text-frame.is-turning {
-  animation: pageTurn 600ms cubic-bezier(0.4, 0, 0.2, 1) both;
+  animation: pageTurn 420ms cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
 .message-text {
@@ -435,7 +435,7 @@ button {
 }
 
 .message-text.is-changing {
-  animation: textIn 400ms ease both;
+  animation: textIn 280ms ease both;
 }
 
 /* === Progress Bar === */
@@ -715,7 +715,7 @@ button {
 @keyframes textIn {
   from {
     opacity: 0;
-    transform: translateX(20px);
+    transform: translateX(10px);
   }
   to {
     opacity: 1;
@@ -725,11 +725,11 @@ button {
 
 @keyframes pageTurn {
   0% {
-    transform: perspective(900px) rotateY(-5deg) translateX(-4px);
+    transform: perspective(900px) rotateY(-2deg) translateX(-2px);
     box-shadow: var(--shadow-md);
   }
   50% {
-    transform: perspective(900px) rotateY(2deg) translateX(2px);
+    transform: perspective(900px) rotateY(1deg) translateX(1px);
   }
   100% {
     transform: perspective(900px) rotateY(0deg) translateX(0);
