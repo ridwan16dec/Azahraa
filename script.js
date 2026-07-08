@@ -101,7 +101,7 @@ const PLAYLIST = [
     title: "Noah - Di Balik Awan"
   },
   {
-    src: "assets/audio/Aku Jeje - Lihat Kebunku (Taman Bunga) #lyricvideo (128).mp3",
+    src: "assets/audio/Aku Jeje - Lihat Kebunku (Taman Bunga) %23lyricvideo (128).mp3",
     title: "Jeje - Lihat Kebunku"
   },
   {
@@ -273,7 +273,7 @@ function hideConfirm() {
 function loadSong(index) {
   const track = PLAYLIST[index];
   song.src = track.src;
-  songTitle.textContent = `🎵 ${track.title}`;
+  songTitle.textContent = `Lagu: ${track.title}`;
   currentSongIndex = index;
 }
 
