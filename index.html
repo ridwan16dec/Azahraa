@@ -1,41 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sebuah surat untuk Zahra" />
     <title>Untuk Zahra</title>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Inter:wght@400;500;600;700&family=Kalam:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260708-watcher-upper-left-2" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css?v=20260708-warm-redesign" />
   </head>
+
   <body>
     <main class="scene" id="app">
+
+      <!-- Intro Section -->
       <section class="intro is-visible" id="intro" aria-label="Pembuka">
         <div class="intro-copy">
-          <p class="kicker">Azzahra Halimatu Syadiah</p>
+          <span class="kicker">Azzahra Halimatu Syadiah</span>
           <h1>Untuk Zahra</h1>
           <p class="intro-note">Dibaca & Dipahami</p>
-          <button class="primary-button" id="startButton" type="button">Mulai</button>
+          <button class="primary-button" id="startButton" type="button">
+            Mulai
+          </button>
         </div>
       </section>
 
+      <!-- Confirm Modal -->
       <section class="confirm" id="confirm" aria-label="Konfirmasi" aria-hidden="true">
         <div class="confirm-box">
           <p>Apa kamu yakin?</p>
           <div class="confirm-actions">
-            <button class="ghost-button" id="noButton" type="button">Tidak</button>
-            <button class="primary-button" id="yesButton" type="button">Iya</button>
+            <button class="ghost-button" id="noButton" type="button">
+              Tidak
+            </button>
+            <button class="primary-button" id="yesButton" type="button">
+              Iya
+            </button>
           </div>
         </div>
       </section>
 
+      <!-- Experience Section -->
       <section class="experience" id="experience" aria-label="Pesan" aria-hidden="true">
-        <div class="art-wrap" aria-hidden="true">
-          <svg class="doodle" viewBox="0 0 760 620" role="img">
+
+        <!-- Illustration Side -->
+        <div class="art-wrap">
+          <svg class="doodle" viewBox="0 0 760 620" role="img" aria-label="Ilustrasi Zahra">
             <defs>
               <filter id="paperNoise">
                 <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" />
@@ -50,32 +68,37 @@
               </linearGradient>
             </defs>
 
+            <!-- Room Background -->
             <rect class="room-fill" x="28" y="32" width="704" height="520" rx="26" />
             <rect class="room-noise" x="28" y="32" width="704" height="520" rx="26" filter="url(#paperNoise)" />
+
+            <!-- Decorative Lines -->
             <path class="sketch line-1" d="M60 485 C132 448 204 474 274 454 S444 412 529 442 663 439 711 396" />
             <path class="sketch line-4" d="M423 92 C498 76 592 81 659 112" />
             <path class="sketch line-5" d="M438 112 C492 104 578 104 642 130" />
 
+            <!-- Watcher (Behind) -->
             <g class="watcher-position" transform="translate(-74 -86) scale(0.9)">
-            <g class="watcher behind-peek">
-              <path class="watcher-bag-fill" d="M120 365 C96 376 82 411 83 453 C104 464 143 462 164 449 C166 410 151 376 120 365 Z" />
-              <path class="sketch watcher-line" d="M120 365 C96 376 82 411 83 453 C104 464 143 462 164 449 C166 410 151 376 120 365 Z" />
-              <path class="sketch watcher-line" d="M104 376 C108 350 142 350 150 376" />
-              <path class="watcher-jacket-fill" d="M167 313 C195 294 248 295 276 317 C294 350 298 406 285 446 C244 458 195 456 154 443 C142 402 145 350 167 313 Z" />
-              <path class="watcher-shirt-fill" d="M205 325 C216 342 234 342 246 325 L252 444 H198 Z" />
-              <path class="sketch watcher-line" d="M167 313 C195 294 248 295 276 317 C294 350 298 406 285 446 C244 458 195 456 154 443 C142 402 145 350 167 313 Z" />
-              <path class="sketch watcher-line" d="M208 326 C211 366 207 407 199 446 M246 326 C241 368 244 407 252 444 M173 357 C188 374 202 384 220 391 M274 358 C259 374 244 385 226 391" />
-              <path class="watcher-face-fill" d="M218 219 C184 223 162 251 162 287 C162 326 188 351 225 351 C261 351 287 324 287 286 C287 247 258 216 218 219 Z" />
-              <path class="watcher-hair-fill" d="M159 281 C157 240 184 207 224 203 C264 207 291 239 291 281 C274 254 250 241 225 240 C200 241 176 254 159 281 Z" />
-              <path class="sketch watcher-line" d="M218 219 C184 223 162 251 162 287 C162 326 188 351 225 351 C261 351 287 324 287 286 C287 247 258 216 218 219 Z" />
-              <path class="sketch watcher-line" d="M159 281 C157 240 184 207 224 203 C264 207 291 239 291 281 C274 254 250 241 225 240 C200 241 176 254 159 281 Z" />
-              <path class="sketch watcher-line" d="M224 205 C221 220 222 232 225 246 M193 238 C204 230 214 227 224 228 M256 238 C245 230 235 227 225 228" />
-              <path class="sketch watcher-line" d="M181 283 H210 V302 H181 Z M232 282 H263 V301 H232 Z M210 292 C218 288 224 288 232 292" />
-              <path class="sketch watcher-line" d="M205 321 C219 331 239 330 251 318" />
-              <path class="sketch watcher-line" d="M172 402 C188 422 210 431 232 431 M280 402 C263 422 245 431 225 431" />
-            </g>
+              <g class="watcher behind-peek">
+                <path class="watcher-bag-fill" d="M120 365 C96 376 82 411 83 453 C104 464 143 462 164 449 C166 410 151 376 120 365 Z" />
+                <path class="sketch watcher-line" d="M120 365 C96 376 82 411 83 453 C104 464 143 462 164 449 C166 410 151 376 120 365 Z" />
+                <path class="sketch watcher-line" d="M104 376 C108 350 142 350 150 376" />
+                <path class="watcher-jacket-fill" d="M167 313 C195 294 248 295 276 317 C294 350 298 406 285 446 C244 458 195 456 154 443 C142 402 145 350 167 313 Z" />
+                <path class="watcher-shirt-fill" d="M205 325 C216 342 234 342 246 325 L252 444 H198 Z" />
+                <path class="sketch watcher-line" d="M167 313 C195 294 248 295 276 317 C294 350 298 406 285 446 C244 458 195 456 154 443 C142 402 145 350 167 313 Z" />
+                <path class="sketch watcher-line" d="M208 326 C211 366 207 407 199 446 M246 326 C241 368 244 407 252 444 M173 357 C188 374 202 384 220 391 M274 358 C259 374 244 385 226 391" />
+                <path class="watcher-face-fill" d="M218 219 C184 223 162 251 162 287 C162 326 188 351 225 351 C261 351 287 324 287 286 C287 247 258 216 218 219 Z" />
+                <path class="watcher-hair-fill" d="M159 281 C157 240 184 207 224 203 C264 207 291 239 291 281 C274 254 250 241 225 240 C200 241 176 254 159 281 Z" />
+                <path class="sketch watcher-line" d="M218 219 C184 223 162 251 162 287 C162 326 188 351 225 351 C261 351 287 324 287 286 C287 247 258 216 218 219 Z" />
+                <path class="sketch watcher-line" d="M159 281 C157 240 184 207 224 203 C264 207 291 239 291 281 C274 254 250 241 225 240 C200 241 176 254 159 281 Z" />
+                <path class="sketch watcher-line" d="M224 205 C221 220 222 232 225 246 M193 238 C204 230 214 227 224 228 M256 238 C245 230 235 227 225 228" />
+                <path class="sketch watcher-line" d="M181 283 H210 V302 H181 Z M232 282 H263 V301 H232 Z M210 292 C218 288 224 288 232 292" />
+                <path class="sketch watcher-line" d="M205 321 C219 331 239 330 251 318" />
+                <path class="sketch watcher-line" d="M172 402 C188 422 210 431 232 431 M280 402 C263 422 245 431 225 431" />
+              </g>
             </g>
 
+            <!-- Main Character (Zahra) -->
             <g class="person floaty">
               <path class="hijab-fill" d="M356 156 C296 157 251 197 239 258 C226 328 251 392 310 422 C333 435 411 435 447 418 C492 397 516 350 511 292 C504 215 441 153 356 156 Z" />
               <path class="hijab-shadow" d="M300 408 C326 428 404 431 443 410 C421 451 335 454 300 408 Z" />
@@ -90,6 +113,8 @@
               <path class="sketch draw-hijab" d="M322 188 C291 221 277 270 286 321 C292 359 309 394 338 421" />
               <path class="sketch draw-hijab" d="M397 184 C433 216 456 258 456 304 C456 354 435 395 403 423" />
               <path class="sketch draw-hijab" d="M318 214 C348 194 394 195 424 217" />
+
+              <!-- Flower Pin -->
               <g class="flower-pin">
                 <circle class="pin-petal" cx="438" cy="214" r="8" />
                 <circle class="pin-petal" cx="454" cy="214" r="8" />
@@ -98,6 +123,8 @@
                 <circle class="pin-center" cx="446" cy="214" r="5" />
                 <path class="sketch draw-pin" d="M438 214 C437 207 443 202 446 202 C450 203 455 208 454 214 C454 220 450 225 446 226 C441 225 437 221 438 214 Z" />
               </g>
+
+              <!-- Cardigan -->
               <path class="cardigan-fill" d="M278 414 C310 392 434 391 475 418 C494 452 501 509 490 548 H264 C252 507 254 451 278 414 Z" />
               <path class="sketch line-6" d="M278 414 C310 392 434 391 475 418 C494 452 501 509 490 548 H264 C252 507 254 451 278 414 Z" />
               <path class="sketch line-7" d="M376 413 C365 451 364 507 370 548 M310 450 C326 469 352 482 369 486 M444 450 C423 469 395 482 372 486" />
@@ -105,29 +132,34 @@
               <path class="sketch hand-right" d="M397 500 C422 484 456 486 474 507" />
             </g>
 
+            <!-- Desk Area -->
             <g class="desk">
               <path class="desk-fill" d="M84 507 C222 488 516 489 684 505 L703 559 C525 586 237 584 65 559 Z" />
               <path class="sketch line-8" d="M84 507 C222 488 516 489 684 505 L703 559 C525 586 237 584 65 559 Z" />
               <path class="sketch line-9" d="M117 538 C284 558 497 559 672 536" />
 
+              <!-- Bag -->
               <g class="bag wiggle">
                 <path class="bag-fill" d="M109 419 C140 402 196 405 223 429 L235 508 C193 519 143 518 98 505 Z" />
                 <path class="sketch line-10" d="M109 419 C140 402 196 405 223 429 L235 508 C193 519 143 518 98 505 Z" />
                 <path class="sketch line-11" d="M136 419 C141 386 191 386 201 421" />
               </g>
 
+              <!-- Jacket -->
               <g class="jacket sway-small">
                 <path class="jacket-fill" d="M507 447 C548 431 599 436 637 461 C614 481 611 513 623 542 C587 548 538 544 493 535 C514 508 516 480 507 447 Z" />
                 <path class="sketch line-12" d="M507 447 C548 431 599 436 637 461 C614 481 611 513 623 542 C587 548 538 544 493 535 C514 508 516 480 507 447 Z" />
                 <path class="sketch line-13" d="M551 443 C558 480 551 512 535 540 M592 449 C579 475 576 506 585 543" />
               </g>
 
+              <!-- Meal Box -->
               <g class="meal">
                 <path class="box-fill" d="M305 468 L424 471 L438 524 L289 523 Z" />
                 <path class="sketch line-14" d="M305 468 L424 471 L438 524 L289 523 Z" />
                 <path class="sketch line-15" d="M318 488 C344 477 389 478 418 490 M304 507 C343 516 391 516 429 507" />
               </g>
 
+              <!-- Water Bottle -->
               <g class="bottle shimmer">
                 <path class="water-fill" d="M654 390 H690 L696 511 C684 520 662 520 649 511 Z" />
                 <path class="cap-fill" d="M658 367 H686 V392 H658 Z" />
@@ -136,24 +168,27 @@
               </g>
             </g>
           </svg>
+
+          <!-- Memory Photo -->
           <figure class="memory-photo" id="memoryPhoto">
-            <span class="photo-tape"></span>
-            <img src="assets/img/1782978891722.jpg" alt="" />
+            <img src="assets/img/1782978891722.jpg" alt="Foto kenangan dengan Zahra" />
             <figcaption>ke foto kamu</figcaption>
           </figure>
         </div>
 
+        <!-- Letter Side -->
         <article class="letter" aria-live="polite">
-          <p class="letter-label">Pesan</p>
+          <span class="letter-label">Pesan</span>
           <div class="text-frame" id="textFrame">
             <p class="message-text" id="messageText"></p>
           </div>
-          <div class="progress" aria-hidden="true">
+          <div class="progress" role="progressbar" aria-label="Progress membaca">
             <span id="progressFill"></span>
           </div>
           <p class="time" id="timeText">00:00 / 00:00</p>
         </article>
 
+        <!-- Background Audio -->
         <audio
           id="song"
           preload="auto"
@@ -161,18 +196,24 @@
         ></audio>
       </section>
 
+      <!-- Ending Question -->
       <section class="ending-question" id="endingQuestion" aria-label="Pertanyaan terakhir" aria-hidden="true">
         <div class="ending-box">
-          <p class="ending-title">Boleh ga aku pergi sekarang?</p>
+          <h2 class="ending-title">Boleh ga aku pergi sekarang?</h2>
           <div class="ending-actions" id="endingActions">
-            <button class="ghost-button" id="allowButton" type="button">Boleh</button>
-            <button class="primary-button" id="stayButton" type="button">Jangan</button>
+            <button class="ghost-button" id="allowButton" type="button">
+              Boleh
+            </button>
+            <button class="primary-button" id="stayButton" type="button">
+              Jangan
+            </button>
           </div>
           <p class="ending-answer" id="endingAnswer" aria-live="polite"></p>
         </div>
       </section>
+
     </main>
 
-    <script src="script.js?v=20260708-slower-text"></script>
+    <script src="script.js?v=20260708-warm-redesign"></script>
   </body>
 </html>
