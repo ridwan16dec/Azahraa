@@ -4,7 +4,7 @@ Apa kabar?
 
 Kalau suatu hari nanti kamu baca pesan ini, aku harap kamu lagi baik-baik aja.
 
-Udah sepuluh hari aku nggak ketemu kamu dan nggak nanya kabar kamu. Ternyata rasanya cukup berat juga. Entah kenapa. Haha, mungkin cuma aku aja yang ngerasa begitu.
+Udah sepuluh hari aku nggak ketemu kamu dan nggak nanya kabar kamu. Ternya rasanya cukup berat juga. Entah kenapa. Haha, mungkin cuma aku aja yang ngerasa begitu.
 
 Hampir tiap hari, kadang pagi, kadang sore, aku suka bilang, "Gimana, kamu happy hari ini?" ke foto kamu. Haha, anggap aja itu doa. Semoga doanya sampai, walaupun aku nggak tahu kamu bakal ngerasain atau nggak.
 
@@ -58,7 +58,7 @@ Maaf ya soal itu.
 
 Zar,
 
-Selama ini aku merhatiin hal-hal kecil tentang kamu. Entah kenapa, aku selalu berharap kamu baik-baik aja. Aku pengin kamu nggak sedih. Aku pengin senyum kamu nggak terpaksa. Aku pengin bahagia kamu datang dengan tulus, bukan karena dipaksa keadaan.
+Selama ini aku merhatiin hal-hal kecil tentang kamu. Entah kenapa, aku selalu berharap kamu baik-baik aja. Aku pengin kamu nggak sedih. Aku pengin senyum kamu nggak necessariamente. Aku pengin bahagia kamu datang dengan tulus, bukan karena dipaksa keadaan.
 
 Aku paham betul kamu setelah baca daily kamu di kertas bukumu yang aku ambil. Berulang-ulang aku baca supaya aku paham posisi kamu, sampai kepikiran aku ubah kata-katamu dan kasih jawaban konyol. Ahaha.
 
@@ -78,7 +78,7 @@ Ini bakal jadi pesan terakhir dari aku.
 
 Senin, 13 Juli 2026.
 
-Hari terakhir kita duduk sebelahan. Hari terakhir aku sok akrab ngobrol sama kamu.
+Hari terakhir kita duduk berpengang. Hari terakhir aku sok akrab ngobrol sama kamu.
 
 Setelah ini, aku nggak akan ada di depan mata kamu lagi. Aku nggak akan merhatiin kamu lagi. Aku nggak akan ganggu kamu lagi. Aku juga nggak akan nanya kabar kamu lagi. Sepuluh hari ini bener-bener pelajaran berat buat aku yang cuma bisa tanya kabarmu lewat Purna, ditambah lagi hari-hari nggak lihat kamu. Gimana nanti setelah empat tahun?
 
@@ -93,6 +93,22 @@ Aku takut rasa nyaman ini berubah jadi rasa suka yang makin dalam. Sementara kit
 Apa pun yang terjadi nanti, semoga hari-hari kamu selalu dipenuhi hal-hal baik.
 
 Happy terus ya, Zar.`;
+
+// Playlist - Diatur sesuai urutan
+const PLAYLIST = [
+  {
+    src: "assets/audio/Dibalik Awan (128).mp3",
+    title: "Noah - Di Balik Awan"
+  },
+  {
+    src: "assets/audio/Aku Jeje - Lihat Kebunku (Taman Bunga) #lyricvideo (128).mp3",
+    title: "Jeje - Lihat Kebunku"
+  },
+  {
+    src: "assets/audio/Nadhif_Basalamah_-_bergema_sampai_selamanya_(mp3.pm).mp3",
+    title: "Nadhif Basalamah - Bergema"
+  }
+];
 
 const paragraphs = rawMessage
   .split(/\n\s*\n/)
@@ -113,6 +129,7 @@ const messageText = document.querySelector("#messageText");
 const memoryPhoto = document.querySelector("#memoryPhoto");
 const progressFill = document.querySelector("#progressFill");
 const timeText = document.querySelector("#timeText");
+const songTitle = document.querySelector("#songTitle");
 const song = document.querySelector("#song");
 const endingQuestion = document.querySelector("#endingQuestion");
 const endingActions = document.querySelector("#endingActions");
@@ -127,6 +144,7 @@ let rafId = null;
 let textStartTime = 0;
 let endingTimer = null;
 let endingScheduled = false;
+let currentSongIndex = 0;
 
 function formatTime(seconds) {
   if (!Number.isFinite(seconds)) return "00:00";
@@ -251,6 +269,23 @@ function hideConfirm() {
   confirmLayer.setAttribute("aria-hidden", "true");
 }
 
+// Playlist functions
+function loadSong(index) {
+  const track = PLAYLIST[index];
+  song.src = track.src;
+  songTitle.textContent = `🎵 ${track.title}`;
+  currentSongIndex = index;
+}
+
+function playNextSong() {
+  const nextIndex = (currentSongIndex + 1) % PLAYLIST.length;
+  loadSong(nextIndex);
+  song.play().catch(() => {
+    // Handle autoplay restrictions
+    experience.addEventListener("click", () => song.play(), { once: true });
+  });
+}
+
 async function startExperience() {
   hideConfirm();
   intro.classList.remove("is-visible");
@@ -263,20 +298,27 @@ async function startExperience() {
   endingScheduled = false;
   window.clearTimeout(endingTimer);
 
-  song.loop = true;
+  song.loop = false;
   song.muted = false;
   song.volume = 1;
+
+  // Load first song
+  loadSong(0);
+
+  // Calculate total duration from all songs
+  const estimatedTotalDuration = (song.duration || 180) * PLAYLIST.length;
+
+  buildCues(estimatedTotalDuration);
+  setMessage(0);
+  textStartTime = performance.now();
+  cancelAnimationFrame(rafId);
+  syncFrame();
+
   try {
     song.currentTime = 0;
   } catch {
     // Some browsers only allow seeking after metadata is ready.
   }
-
-  buildCues(song.duration || 180);
-  setMessage(0);
-  textStartTime = performance.now();
-  cancelAnimationFrame(rafId);
-  syncFrame();
 
   const playAttempt = song.play();
   try {
@@ -301,15 +343,18 @@ startButton.addEventListener("click", showConfirm);
 noButton.addEventListener("click", hideConfirm);
 yesButton.addEventListener("click", startExperience);
 
+// Song ended - play next in playlist
 song.addEventListener("ended", () => {
-  if (!song.loop) {
-    song.currentTime = 0;
-    song.play();
-  }
+  playNextSong();
 });
 
 song.addEventListener("loadedmetadata", () => {
-  buildCues(song.duration);
+  // Recalculate duration based on actual song duration
+  const totalDuration = PLAYLIST.reduce((sum, _, i) => {
+    if (i === 0) return song.duration;
+    return sum; // Approximate for other songs
+  }, 0);
+  buildCues(song.duration * PLAYLIST.length);
   timeText.textContent = `00:00 / ${formatTime(cues.at(-1)?.end || 0)}`;
 });
 

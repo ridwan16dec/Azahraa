@@ -464,6 +464,15 @@ button {
   letter-spacing: 0.08em;
 }
 
+.song-title {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: var(--soft-teal);
+  opacity: 0.8;
+  font-weight: 500;
+  transition: opacity 300ms ease;
+}
+
 /* === Ending Question === */
 .ending-question {
   position: fixed;
