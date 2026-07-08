@@ -376,11 +376,6 @@ h1 {
   fill: #27211f;
 }
 
-.window-fill {
-  fill: url("#windowWash");
-  opacity: 0.72;
-}
-
 .hijab-fill {
   fill: #8a6247;
 }
@@ -439,6 +434,30 @@ h1 {
   fill: #3b7d9b;
 }
 
+.watcher {
+  opacity: 0.95;
+}
+
+.watcher-face-fill {
+  fill: #eeb99e;
+}
+
+.watcher-hair-fill {
+  fill: #2d2928;
+}
+
+.watcher-jacket-fill {
+  fill: #232323;
+}
+
+.watcher-shirt-fill {
+  fill: #f2eee5;
+}
+
+.watcher-bag-fill {
+  fill: #34302e;
+}
+
 .sketch {
   fill: none;
   stroke: var(--ink);
@@ -451,10 +470,9 @@ h1 {
 }
 
 .line-1 { animation-delay: 0.1s; }
-.line-2 { animation-delay: 0.2s; }
-.line-3 { animation-delay: 0.4s; }
 .line-4 { animation-delay: 0.5s; }
 .line-5 { animation-delay: 0.65s; }
+.watcher-line { animation-delay: 0.35s; }
 .draw-hijab { animation-delay: 0.8s; }
 .draw-face { animation-delay: 1.05s; }
 .draw-dimples { animation-delay: 1.12s; }
@@ -477,6 +495,11 @@ h1 {
 .floaty {
   transform-origin: 380px 350px;
   animation: floaty 5.8s ease-in-out infinite;
+}
+
+.behind-peek {
+  transform-origin: 222px 334px;
+  animation: behindPeek 6.5s ease-in-out infinite;
 }
 
 .wiggle {
@@ -584,6 +607,16 @@ h1 {
   }
   50% {
     transform: translateY(-8px) rotate(-0.3deg);
+  }
+}
+
+@keyframes behindPeek {
+  0%,
+  100% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(4px) translateY(-3px) rotate(0.35deg);
   }
 }
 
