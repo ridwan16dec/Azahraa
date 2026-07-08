@@ -2,51 +2,97 @@ const rawMessage = `Hay, Zahra.
 
 Apa kabar?
 
-Kalau suatu hari nanti kamu membaca pesan ini, semoga saat itu kamu sedang baik-baik saja.
+Kalau suatu hari nanti kamu baca pesan ini, aku harap kamu lagi baik-baik aja.
 
-Sudah sepuluh hari aku nggak ketemu kamu dan nggak nanya kabar kamu. Ternyata rasanya cukup berat juga. Kenapa ya? Haha... mungkin cuma aku yang ngerasa seperti itu.
+Udah sepuluh hari aku nggak ketemu kamu dan nggak nanya kabar kamu. Ternyata rasanya cukup berat juga. Entah kenapa. Haha, mungkin cuma aku aja yang ngerasa begitu.
 
-Hampir setiap hari, kadang pagi, kadang sore, aku selalu bilang, "gimana kamu happy hari ini?," ke foto kamu. Haha... Anggap saja itu doa. Semoga doa itu sampai, walaupun aku nggak tahu kamu akan pernah merasakannya atau nggak.
+Hampir tiap hari, kadang pagi, kadang sore, aku suka bilang, "Gimana, kamu happy hari ini?" ke foto kamu. Haha, anggap aja itu doa. Semoga doanya sampai, walaupun aku nggak tahu kamu bakal ngerasain atau nggak.
 
-Kalau suatu saat kamu sempat bertanya, "Kok tumben Ridwan nggak nanya kabar?"
+Kalau suatu saat kamu sempat mikir, "Kok tumben Ridwan nggak nanya kabar?"
 
-Walaupun aku yakin kemungkinan besar kamu nggak akan kepikiran sampai ke situ. Haha. Tapi kalau memang kamu pernah bertanya, sebenarnya nggak ada alasan yang benar-benar bisa menjelaskan. Kalau kamu tanya langsung ke aku sekarang, aku akan jawab sejujur-jujurnya.
+Walaupun aku yakin, kemungkinan besar kamu nggak akan sampai mikir begitu. Haha. Tapi kalau iya, sebenernya nggak ada alasan yang benar-benar gampang buat dijelasin. Kalau kamu tanya langsung ke aku sekarang, mungkin aku bakal jawab sejujur-jujurnya.
 
 Oh ya, gimana hari-hari kamu?
 
-Terakhir aku lihat, kamu kurang sehat. Sebenarnya aku ingin nanya keadaan kamu, tapi ada batas yang membuat aku cuma bisa memperhatikan kamu dari jauh. Tapi aku yakin kamu kuat. Kamu hebat.
+Terakhir aku lihat, kamu lagi kurang sehat. Sebenernya aku pengin banget nanya keadaan kamu, tapi ada batas yang bikin aku cuma bisa merhatiin kamu dari jauh. Tapi aku yakin kamu kuat. Kamu hebat.
 
-Zar, pernah nggak kamu sadar kalau kita cuma punya waktu sekitar empat tahun berada di tempat yang sama? Setelah itu, mungkin kita akan menjalani hidup masing-masing, seperti sepuluh hari ini yang sudah kita lewati.
+Zar, pernah nggak kamu sadar, kita cuma punya waktu sekitar empat tahun di tempat yang sama? Setelah itu, mungkin kita bakal jalanin hidup masing-masing. Sama kayak sepuluh hari ini yang udah kita lewati.
 
-Sepuluh hari ini juga jadi pembelajaran buat aku, supaya mulai terbiasa. Karena suatu saat nanti, aku mungkin nggak akan bisa lagi melihat kamu duduk di kursi di ruangan tengah, di meja pertama, ada sekotak makanan, kadang sebungkus kertas nasi berwarna cokelat, dan sebotol air putih yang kadang susah kamu buka.
+Sepuluh hari ini juga jadi pelajaran buat aku, biar mulai terbiasa. Karena suatu saat nanti, mungkin aku nggak akan bisa lagi lihat kamu duduk di kursi ruangan tengah, di meja pertama, dengan sekotak makanan, kadang sebungkus kertas nasi warna cokelat, dan sebotol air putih yang kadang susah kamu buka.
 
-Aku rasa, nanti aku akan kangen sama pemandangan sederhana itu.
+Kayaknya nanti aku bakal kangen sama pemandangan sederhana itu.
 
-Selama empat tahun yang singkat ini, aku cuma ingin memperhatikan hal-hal kecil tentang kamu. Entah kenapa, aku selalu berharap kamu baik-baik saja. Aku ingin kamu nggak sedih, senyummu nggak terpaksa, dan kebahagiaanmu selalu datang dengan tulus tanpa paksaan.
+Aku mau cerita awal aku ketemu kamu.
 
-Kenapa aku bisa sampai seperti ini?
+Senin, 1 September 2025. Pertama kali aku lihat kamu, kamu baru keluar dari musala. Itu aja sih, haha. Sekadar info aja. Kalau aku nggak salah ingat, matkul pertama kita waktu itu sama Pak Rusli, di ruangan lantai 2 yang AC-nya panas. Aku lihat kamu ngipas-ngipas karena kepanasan.
+
+Dari situ aku mulai merhatiin kamu.
+
+Sampai akhirnya kamu pindah ke kelas pagi. Aku tahu itu dari Hafidz, anak kelas pagi. Waktu itu aku pernah nanya ke dia, "Kenal nggak sama Azzahra?" Dia bilang nggak kenal, adanya "Azzahro". Terus aku bilang, "Gue lebih suka kalau dia Azzahra." Haha.
+
+Tapi ada satu ucapan dia yang bikin aku cukup diam waktu dengarnya. Dia bilang, "Dia udah nikah, Bang."
+
+Pas dengar itu rasanya kayak, "Hah? Kok bisa?" Tapi ya, bisa lah. Siapa juga yang nggak mau sama kamu? Haha.
+
+Tapi setelah itu aku juga sempat mikir, "Emang kenapa ya? Masa aku sampai segitunya?" Padahal nggak ada yang salah. Aku cuma kagum, cuma pengin kenal kamu.
+
+Awalnya aku emang cuma pengin kenal. Tapi manusia yang sekarang jadi suami kamu, bener-bener jagain kamu banget. Haha. Sampai rasanya susah banget buat sekadar kenal sama kamu. Sampai diblok lah WA-ku, ada juga yang dilabrak lewat WA. Tapi nggak apa-apa, itu wajar. Mungkin emang begitu cara laki-laki menjaga perempuan yang dia sayang.
+
+Btw, waktu aku tahu kamu dirawat karena sakit, aku yang paling semangat bilang, "Yuk, cepat ke rumah sakit jenguk Zahra." Coba aja tanya Purna. Aku yang paling repot waktu itu. Aku juga yang sering bilang ke Purna buat nanya kabar dan keadaan kamu setelah operasi. Haha, ini sekadar info aja buat kamu.
+
+Ada lagi.
+
+Waktu ulangan harian Pak Harry, ada jawaban kamu yang salah input. Pak Harry minta dibetulin karena nilainya mau dimasukin ke data presensi. Kebetulan waktu itu kamu lembur, jadi nggak masuk. Kamu tahu nggak? Kertas ulangan kamu aku ambil dari meja, terus aku bantu betulin.
+
+Itu juga sekadar FYI. Haha.
+
+Kejadian kedua juga masih di matkul Pak Harry. Waktu itu kamu lagi sakit perut. Aku bahkan sampai nggak ngerjain punya aku sendiri. Kamu mungkin tahu, karena waktu itu Purna sempat foto. Sebenernya aku agak kesel, karena maksud aku biar aku aja nanti yang kasih tahu ke kamu.
+
+Semua yang aku lakuin itu bentuk tanggung jawab aku, setelah aku nggak kuat lihat kamu nangis waktu kejadian kelompok KPL. Kamu tahu kan kejadian itu?
+
+Waktu itu aku lihat kamu capek banget. Dari muka kamu aja kelihatan. Kamu harus kerja, ngurus ini itu, ngurus keluarga, jadi MUA, dan masih harus ngurus masalah yang asalnya dari kebodohan aku.
+
+Aku bener-bener nyesel.
+
+Maaf ya soal itu.
+
+Zar,
+
+Selama ini aku merhatiin hal-hal kecil tentang kamu. Entah kenapa, aku selalu berharap kamu baik-baik aja. Aku pengin kamu nggak sedih. Aku pengin senyum kamu nggak terpaksa. Aku pengin bahagia kamu datang dengan tulus, bukan karena dipaksa keadaan.
+
+Aku paham betul kamu setelah baca daily kamu di kertas bukumu yang aku ambil. Berulang-ulang aku baca supaya aku paham posisi kamu, sampai kepikiran aku ubah kata-katamu dan kasih jawaban konyol. Ahaha.
+
+Kenapa aku bisa sampai segitunya?
 
 Aku juga nggak tahu.
 
-Kalau dibilang cinta, rasanya kata itu terlalu sederhana. Mungkin yang lebih tepat, aku merasa sangat nyaman dan kagum sama kamu. Sampai akhirnya, hal-hal kecil tentang kamu pun tanpa sadar selalu aku ingat.
+Kalau dibilang cinta, rasanya kata itu terlalu sederhana. Mungkin yang lebih tepat, aku nyaman dan kagum sama kamu. Sampai akhirnya, hal-hal kecil tentang kamu pun tanpa sadar aku ingat.
 
-Semua perhatian yang aku kasih sebenarnya nggak ada apa-apanya dan mungkin juga nggak berarti buat kamu. Jadi anggap aja ini adalah gambaran tentang bagaimana seseorang seharusnya memperhatikan pasangannya. Mungkin sekarang laki-lakimu belum, tapi aku berharap suatu saat nanti laki laki mu memperlakukan kamu persis seperti itu, bahkan jauh lebih baik.
+Semua perhatian yang aku kasih sebenernya nggak ada apa-apanya. Mungkin juga nggak berarti buat kamu. Jadi anggap aja ini sebagai gambaran kecil tentang bagaimana seseorang seharusnya memperhatikan pasangannya.
 
-Ini akan jadi pesan terakhirku.
+Mungkin sekarang laki-laki kamu belum sepenuhnya seperti itu. Tapi aku berharap suatu saat nanti, dia bisa memperlakukan kamu seperti itu, bahkan jauh lebih baik dari apa yang pernah aku lakuin.
+
+Zar, maaf ya.
+
+Ini bakal jadi pesan terakhir dari aku.
 
 Senin, 13 Juli 2026.
 
-Hari terakhir kita duduk bersebelahan. Hari terakhir aku sok akrab ngobrol sama kamu.
+Hari terakhir kita duduk sebelahan. Hari terakhir aku sok akrab ngobrol sama kamu.
 
-Setelah ini, aku ga akan ada di depan matamu lagi,ga akan memperhatikan kamu, ga akan ganggu kamu lagi, dan ga akan nanya kabar kamu lagi.
+Setelah ini, aku nggak akan ada di depan mata kamu lagi. Aku nggak akan merhatiin kamu lagi. Aku nggak akan ganggu kamu lagi. Aku juga nggak akan nanya kabar kamu lagi. Sepuluh hari ini bener-bener pelajaran berat buat aku yang cuma bisa tanya kabarmu lewat Purna, ditambah lagi hari-hari nggak lihat kamu. Gimana nanti setelah empat tahun?
 
-kalau kamu butuh bantuan bilang aja sama purna.
+Setelah kita lulus dan menjalani hidup masing-masing?
 
-Kalau kamu tanya kenapa, jawabannya sederhana. Aku takut rasa nyamanku berubah menjadi rasa suka yang lebih dalam, sementara kita sama-sama tahu, ada batas yang nggak bisa kita lewati.
+Kalau suatu saat kamu butuh bantuan, bilang aja ke Purna.
+
+Kalau kamu tanya kenapa, jawabannya sederhana.
+
+Aku takut rasa nyaman ini berubah jadi rasa suka yang makin dalam. Sementara kita sama-sama tahu, ada batas yang nggak boleh kita lewati.
 
 Apa pun yang terjadi nanti, semoga hari-hari kamu selalu dipenuhi hal-hal baik.
 
-Happy terus ya, Azzahra Halimatu Syadiah.`;
+Happy terus ya, Zar.`;
 
 const paragraphs = rawMessage
   .split(/\n\s*\n/)
