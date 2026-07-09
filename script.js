@@ -4,7 +4,7 @@ Apa kabar?
 
 Aku buat Web ini jujur niat sih.
 
-aku udah merencakanya,untuk 10 hari ga ketemu kamu aku ngapainya ya ? yaudah buat web aja deh, ada isi kepala yg mau aku tumpahin ditulisan.
+aku udah merencanakan untuk 10 hari ga ketemu kamu, mau ngapainya ya ? yaudah buat web aja deh, ada isi kepala yg mau aku tumpahin ditulisan.
 
 maaf ya kalau ini berlebihan, ini norak bgt sih asli.
 
@@ -12,17 +12,17 @@ sebenernya aku tuh mau ngomongin lgsg aja ke kamu cuman kalau ngomong panjang da
 
 semua ini aku buat khusus kamu, bahkan nama domain webnya aja nama kamu.
 
-baca dengan serius , samapi habis dan kasih pilihan nanti di akhir .
+baca dengan serius , sampai habis dan kasih pilihan nanti di akhir .
 
 Siap ?
 
-Udah sepuluh hari aku nggak ketemu kamu dan nggak nanya kabar kamu. Ternya rasanya cukup berat juga. Entah kenapa. Haha, mungkin cuma aku aja yang ngerasa begitu.
+Udah sepuluh hari aku nggak ketemu kamu dan berniat nggak nanya kabar kamu ke Purna. Lumayan berat. Haha, mungkin cuma aku aja yang ngerasa begitu.
 
-Hampir tiap hari, kadang pagi, kadang sore, aku suka bilang, "Gimana, kamu happy hari ini?" ke foto kamu. Haha, anggap aja itu doa. Semoga doanya sampai aamiin.
+Hampir tiap hari, kadang pagi, kadang sore, aku suka bilang, "kamu happy hari ini?" ke foto kamu. Haha, anggap aja itu doa. Semoga doanya sampai aamiin.
 
-ehh.. Aku tuh kayak sempet menghayal berharap kamu nanya dalam diri sendiri ?, "Kok tumben Ridwan nggak nanya kabar? atau ucap sesuatu ke aku?" aneh bgt yakk hahah
+ehh.. Aku tuh kayak sempet berkhayal dan berharap kamu nanya dalam diri sendiri ?, "Kok tumben Ridwan nggak nanya kabar? atau ucap sesuatu ke aku?" aneh bgt yakk hahah
 
-Udah Jelas lah ya kemungkinan besar, kamu nggak akan sampai mikir begitu. Maaf yaa org ini memang kadang suka berhayal aneh hahaha.
+Udah Jelas lah ya kemungkinan besar, kamu nggak akan sampai mikir begitu. Maaf yaa orang ini memang kadang suka berkhayal aneh hahaha.
 
 Oh ya, gimana hari-hari kamu?
 
@@ -32,7 +32,7 @@ oh iya !
 
 Zar,kamu sadar ga, kita cuma punya waktu sekitar empat tahun di tempat yang sama? Setelah itu, mungkin kita bakal jalanin hidup masing-masing. Sama kayak sepuluh hari ini yang udah kita lewati.
 
-Sepuluh hari ini juga jadi pelajaran buat aku, untuk mulai terbiasa. Karena suatu saat nanti, mungkin aku nggak akan bisa lagi lihat kamu duduk di kursi ruangan tengah kampus, di meja pertama, dengan sekotak makanan, kadang sebungkus kertas nasi , dan sebotol air putih yang kadang susah kamu buka.
+Sepuluh hari ini juga jadi pelajaran buatku, untuk mulai terbiasa. Karena suatu saat nanti, nggak akan bisa lagi lihat kamu duduk di kursi ruangan tengah kampus, di meja pertama, dengan sekotak makanan, kadang sebungkus kertas nasi , dan sebotol air putih yang kadang susah kamu buka.
 
 Kayaknya nanti aku bakal kangen sama pemandangan sederhana itu deh .
 
