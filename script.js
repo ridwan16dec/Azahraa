@@ -167,6 +167,7 @@ const allowButton = document.querySelector("#allowButton");
 const stayButton = document.querySelector("#stayButton");
 const textFrame = document.querySelector("#textFrame");
 const readyPrompt = document.querySelector("#readyPrompt");
+const readyHint = document.querySelector("#readyHint");
 const readyButton = document.querySelector("#readyButton");
 const readyChoice = document.querySelector("#readyChoice");
 const readyAnswer = document.querySelector("#readyAnswer");
@@ -296,6 +297,7 @@ function setMessage(index) {
   readyPrompt.setAttribute("aria-hidden", String(!shouldShowReadyPrompt));
   if (shouldShowReadyPrompt) {
     pauseReading();
+    readyHint.hidden = false;
     readyButton.hidden = false;
     readyChoice.hidden = true;
     readyAnswer.textContent = "";
@@ -400,6 +402,7 @@ async function startExperience() {
   pauseStartedAt = null;
   readyPrompt.classList.remove("is-visible");
   readyPrompt.setAttribute("aria-hidden", "true");
+  readyHint.hidden = false;
   readyButton.hidden = false;
   readyChoice.hidden = true;
   readyAnswer.textContent = "";
@@ -467,6 +470,7 @@ stayButton.addEventListener("click", () => {
 });
 
 readyButton.addEventListener("click", () => {
+  readyHint.hidden = true;
   readyButton.hidden = true;
   readyChoice.hidden = false;
   readyAnswer.textContent = "";
@@ -476,6 +480,7 @@ continueButton.addEventListener("click", () => {
   readyGateCompleted = true;
   readyPrompt.classList.remove("is-visible");
   readyPrompt.setAttribute("aria-hidden", "true");
+  readyHint.hidden = false;
   readyAnswer.textContent = "";
   resumeReading();
 });

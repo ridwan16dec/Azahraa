@@ -451,6 +451,17 @@ button {
   animation: textIn 260ms ease both;
 }
 
+.ready-hint {
+  margin: 0 0 9px;
+  color: #7b5a48;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: clamp(0.86rem, 2.3vw, 1rem);
+  font-weight: 800;
+  letter-spacing: 0;
+  text-align: center;
+  animation: hintBounce 1.15s ease-in-out infinite;
+}
+
 .ready-main-button,
 .ready-option-button {
   border: 0;
@@ -505,6 +516,17 @@ button {
   margin-top: 14px;
   margin-bottom: 0;
   color: var(--terracotta);
+}
+
+@keyframes hintBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
 }
 
 /* === Progress Bar === */
