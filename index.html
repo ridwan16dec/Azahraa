@@ -15,7 +15,7 @@
     />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles.css?v=20260708-playlist-timing" />
+    <link rel="stylesheet" href="styles.css?v=20260709-ready-gate" />
   </head>
 
   <body>
@@ -181,6 +181,17 @@
           <span class="letter-label">Pesan</span>
           <div class="text-frame" id="textFrame">
             <p class="message-text" id="messageText"></p>
+            <div class="ready-prompt" id="readyPrompt" aria-hidden="true">
+              <button class="ready-main-button" id="readyButton" type="button">SIAP</button>
+              <div class="ready-choice" id="readyChoice" hidden>
+                <p>Lanjut atau tidak?</p>
+                <div>
+                  <button class="ready-option-button" id="continueButton" type="button">Lanjut</button>
+                  <button class="ready-option-button is-soft" id="stopButton" type="button">Tidak</button>
+                </div>
+              </div>
+              <p class="ready-answer" id="readyAnswer" aria-live="polite"></p>
+            </div>
           </div>
           <div class="progress" role="progressbar" aria-label="Progress membaca">
             <span id="progressFill"></span>
@@ -211,6 +222,6 @@
 
     </main>
 
-    <script src="script.js?v=20260708-playlist-timing"></script>
+    <script src="script.js?v=20260709-ready-gate"></script>
   </body>
 </html>
